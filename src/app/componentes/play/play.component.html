@@ -1,0 +1,16 @@
+<ion-card *ngFor="let curso of cursos">
+  <!-- Otras partes del código -->
+
+  <div class="video-container">
+    <iframe
+      width="100%"
+      height="300"
+      [src]="getVideoUrl(curso.clases)"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
+
+  <!-- Otras partes del código -->
+  
+</ion-card>

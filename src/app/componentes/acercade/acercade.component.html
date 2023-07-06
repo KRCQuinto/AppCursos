@@ -1,0 +1,46 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Acerca de Nosotros</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-grid class="ion-text-center">
+    <ion-row>
+      <ion-col>
+        <img src="https://images.pexels.com/photos/7432246/pexels-photo-7432246.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de los creadores de la app" class="creadores-app-img">
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <h2>¡Bienvenidos a nuestra aplicación!</h2>
+        <p>
+          KevEdu nace de la necesidad de proporcionar una alternativa completamente gratuitoa a las personas con sed de conocimientos. 
+          Parte de la colaboracion de dos jovenes entusiasta por el Elearning, Kevin Quinto y Kevin vilchez, que buscan plasmar atraves de su aplicación
+          su amor por aprender y el bien común.
+        </p>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="secondary" [href]="'https://www.instagram.com/leomessi/'" target="_blank">
+          <ion-icon name="logo-instagram"></ion-icon>
+          Sígue a Vilchez en Instagram
+        </ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button expand="block" color="secondary" [href]="'https://twitter.com/Cristiano'" target="_blank">
+          <ion-icon name="logo-twitter"></ion-icon>
+          Sígue a Quinto en Twitter
+        </ion-button>
+        
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+</ion-content>
+

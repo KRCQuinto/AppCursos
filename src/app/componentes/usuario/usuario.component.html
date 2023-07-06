@@ -1,0 +1,27 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/inicio"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card class="profile-card">
+    <div class="profile-image-container">
+      <img [src]="imagenPerfil" alt="Avatar" class="profile-image">
+    </div>
+    <ion-card-content>
+      <h3 class="profile-name">¿Desea cerrar sesión?</h3>
+      <p class="profile-description">Puedes volver cuando gustes</p>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-button expand="full" color="primary" routerLink="/login">Cerrar Sesión</ion-button>
+
+  
+</ion-content>
+
+
+

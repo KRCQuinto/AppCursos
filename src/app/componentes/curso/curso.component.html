@@ -1,0 +1,87 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+    <ion-back-button defaultHref="/inicio"></ion-back-button>
+   
+    </ion-buttons>
+    <ion-title>Cursos</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-title size="large">Cursos</ion-title>
+    </ion-toolbar>
+  </ion-header>
+
+  <div id="fh5co-explore" class="fh5co-bg-section">
+    <div class="container">
+      <div class="row animate-box">
+        <div class="col-md-6 col-md-offset-3 text-center fh5co-heading">
+          <h2>Toma un curso en KevEdu</h2>
+        </div>
+      </div>
+    </div>		
+    <div class="fh5co-explore fh5co-explore1">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8 col-md-push-5 animate-box">
+            <img class="img-responsive" src="https://scontent.fmga3-2.fna.fbcdn.net/v/t39.30808-6/356643372_807885504028665_7246168361820542020_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_ohc=nBag-E9hMzQAX8HODp7&_nc_ht=scontent.fmga3-2.fna&oh=00_AfDVJ-ltSMhPaeSlTsLCEeSfgxlqg_2q7EY2LdQyPr4y_A&oe=64A6F151" alt="work">
+          </div>
+          <div class="col-md-4 col-md-pull-8 animate-box">
+            <div class="mt">
+              <h3>¿Porque usar la plataformam KevEdu?</h3>
+              <p >Es perfecta para los autodidactas. Ser autodidacta permite aprender de manera independiente y adaptar el proceso de aprendizaje a tus necesidades y ritmo, fomentando la creatividad y la autodeterminación en el proceso de adquirir conocimientos.</p>
+              <ul class="list-nav">
+                <li><i class="icon-check2"></i>Flexibilidad</li>
+                <li><i class="icon-check2"></i>Variedad de opciones</li>
+                <li><i class="icon-check2"></i>Accesibilidad</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  
+  </div>
+
+
+
+  <h3 class="text-center">Cursos disponibles</h3>
+
+
+  <ion-card *ngFor="let curso of cursos">
+    <img class="card-image" src="{{curso.imagen}}" alt="Imagen del Curso">
+    <ion-card-header>
+      <ion-card-title class="card-title">{{curso.titulo}}</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+      <p class="card-description">{{curso.descripcion}}</p>
+      <p class="card-info"><strong>Dirigido a:</strong> {{curso.publico}}</p>
+      <p class="card-info"><strong>Contenido:</strong> {{curso.contenidos}}</p>
+    </ion-card-content>
+    <div class="video-container">
+      <ion-button expand="full" (click)="openVideo(curso.clases)">
+        Ir al curso
+      </ion-button>
+    </div>
+    <div *ngIf="!curso.id">
+      Otro contenido o mensaje si no hay un video principal definido
+    </div>
+  </ion-card>
+
+
+  
+  
+  
+  
+
+  
+  
+  
+  
+ 
+
+</ion-content>
+

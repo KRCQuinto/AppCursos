@@ -1,0 +1,53 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Inicio</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <ion-card class="ion-animated ion-fade-in">
+    <img src="https://images.pexels.com/photos/6393342/pexels-photo-6393342.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Imagen de una chica frente a una computadora">
+    <ion-card-header>
+      <ion-card-title>Bienvenidos a KevEdu</ion-card-title>
+    </ion-card-header>
+    <ion-card-content >
+      La educación en línea ha revolucionado la forma en que aprendemos, brindando acceso a cursos de calidad
+      de forma gratuita para personas de todo el mundo. Aprovecha esta oportunidad para adquirir nuevos conocimientos
+      y desarrollar tus habilidades.
+    </ion-card-content>
+  </ion-card>
+
+ 
+ 
+<ion-card *ngFor="let p of personal">
+  <img src="{{p.imagen}}" class="card-img-top" alt="..." style="width: auto; height: auto;">
+  <ion-card-header>
+    <ion-card-title>{{p.titulo}}</ion-card-title>
+  </ion-card-header>
+  <ion-card-content>
+
+        <p> {{p.descripcion}}</p>
+
+  </ion-card-content>
+</ion-card>
+ 
+
+
+
+
+
+
+
+  <ion-button expand="full" class="ion-animated ion-bounce-in" routerLink="/curso">Ir a los Cursos</ion-button>
+     
+      
+      
+
+  </ion-content>
+
+

@@ -1,0 +1,56 @@
+.profile-card {
+    max-width: 400px;
+    margin: 0 auto;
+    --background: #f2f2f2; /* Cambia el color de fondo según tus preferencias */
+    --border-radius: 10px; /* Ajusta el radio del borde según tus preferencias */
+    --padding: 16px; /* Ajusta el espaciado interno según tus preferencias */
+  }
+  
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+
+  
+  .profile-image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 16px; /* Ajusta el margen inferior según tus preferencias */
+  }
+
+  .profile-card {
+    background-color: #C5DFF8;
+    border-radius: 10px;
+    padding: 20px;
+  }
+
+  .profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+
+  .profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  .profile-name {
+    font-size: 24px;
+    font-weight: bold;
+    color: #4A55A2;
+    margin-bottom: 10px;
+  }
+
+  .profile-description {
+    color: #7895CB;
+  }
+
+  ion-button {
+    margin-top: 20px;
+  }

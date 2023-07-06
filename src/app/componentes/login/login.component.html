@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-title class="ion-text-center">Iniciar sesión</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="ion-padding">
+  <div class="login-container">
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="floating"><strong>Correo electronico</strong></ion-label>
+      <ion-input type="email" required [(ngModel)]="user.email"></ion-input>
+    </ion-item>
+
+    <ion-item class="ion-margin-bottom">
+      <ion-label position="floating"><strong>Contraseña</strong></ion-label>
+      <ion-input type="password" required [(ngModel)]="user.pssw"></ion-input>
+    </ion-item>
+
+    <ion-button expand="full" color="secondary" (click)="login(user)" class="ion-margin-bottom">
+      Iniciar sesión
+    </ion-button>
+
+    <div class="ion-text-center">
+      <a routerLink="/registrar">Crear una cuenta</a>
+    </div>
+  </div>
+</ion-content>
+
+
